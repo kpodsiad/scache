@@ -30,7 +30,7 @@ object Releasable {
   }
 
 
-  @deprecated(message = "use releaseFromFunctor which doesn't require Applicative instance", since = "4.0.1")
+  @deprecated("use releaseFromFunctor which doesn't require Applicative instance", "4.0.1")
   @nowarn("msg=parameter value evidence$3 in method functorReleasable is never used")
   def functorReleasable[F[_]: Applicative]: Functor[Releasable[F, _]] = new Functor[Releasable[F, _]] {
 
